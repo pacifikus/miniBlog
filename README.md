@@ -1,0 +1,3 @@
+# miniBlog
+
+Django miniblog
