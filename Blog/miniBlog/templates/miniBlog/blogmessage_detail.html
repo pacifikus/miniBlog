@@ -6,6 +6,8 @@
   <p><strong>Blog:</strong> <a href="{{ blogmessage.blog.get_absolute_url }}">{{ blogmessage.blog.blog_name }}</a></p>
   <p><strong>Author:</strong> <a href="{{ blogmessage.blog.blogger.get_absolute_url}}">
     {{ blogmessage.blog.blogger.user.username }}</a></p>
+  <p><img src="{{ blogmessage.image.url }}" height="300" /></p>
+
   <p><strong>Text:</strong> {{ blogmessage.text }}</p>
   <p><strong>Date:</strong> {{ blogmessage.create_date }}</p>
 

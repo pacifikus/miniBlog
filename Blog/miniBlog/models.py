@@ -55,6 +55,7 @@ class BlogMessage(models.Model):
     create_date = models.DateTimeField(auto_now_add=True)
     text = models.TextField(verbose_name='Описание')
     blog = models.ForeignKey(Blog, on_delete=models.CASCADE, verbose_name='Блог')
+    image = models.ImageField(upload_to='image/', null=True)
 
     class Meta:
         verbose_name = 'Пост'
