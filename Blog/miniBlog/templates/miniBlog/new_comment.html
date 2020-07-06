@@ -1,0 +1,14 @@
+{% extends "base_site.html" %}
+{% block content %}
+
+    <h1>Add new comment</h1>
+    <p>Author: {{user.get_username}}</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+        {{ form }}
+        </table>
+        <input type="submit" value="Add" />
+    </form>
+
+{% endblock %}
