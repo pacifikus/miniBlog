@@ -24,6 +24,7 @@
           <li><a href="{% url 'bloggers' %}">All bloggers</a></li>
           <hr>
           {% if user.is_authenticated %}
+            <p><img src="{{ user.blogger.image.url }}" height="80" /></p>
             <li>User: {{ user.get_username }}</li>
             <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
           {% else %}

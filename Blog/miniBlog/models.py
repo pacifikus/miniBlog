@@ -10,6 +10,7 @@ class Blogger(models.Model):
     bio = models.TextField(max_length=500, blank=True, default='Нет информации', verbose_name='Общая информация')
     user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name='Пользователь')
     birth_date = models.DateField(null=True, blank=True, verbose_name='Дата рождения')
+    image = models.ImageField(upload_to='image/', default='image/default_pic.png')
 
     class Meta:
         verbose_name = 'Автор блога'
