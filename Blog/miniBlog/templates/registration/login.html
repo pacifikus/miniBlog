@@ -8,23 +8,19 @@
 
 <form method="post" action="{% url 'login' %}">
 {% csrf_token %}
+{% load crispy_forms_tags %}
 <table>
-
-<tr>
-  <td>{{ form.username.label_tag }}</td>
-  <td>{{ form.username }}</td>
-</tr>
-
-<tr>
-  <td>{{ form.password.label_tag }}</td>
-  <td>{{ form.password }}</td>
-</tr>
+  <tr>
+    <td>{{ form.username|as_crispy_field }}</td>
+  </tr>
+  <tr>
+    <td>{{ form.password|as_crispy_field }}</td>
+  </tr>
 </table>
-
-<input type="submit" value="login" />
+<input type="submit" value="login" class="btn btn-secondary"/>
 <input type="hidden" name="next" value="{{ next }}" />
 </form>
 
-<p><a href="{% url 'password_reset' %}">{% trans 'LostPassword' %}</a></p>
+<p><a href="{% url 'password_reset' %}">{% trans 'LostPassword' %}?</a></p>
 
 {% endblock %}

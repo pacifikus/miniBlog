@@ -15,6 +15,7 @@
 
 * [Python 3.7.3](https://www.python.org/downloads/release/python-373/)
 * [Django 3.0.8](https://www.djangoproject.com/)
+* [django-crispy-forms 1.9.1](https://django-crispy-forms.readthedocs.io/)
 
 
 ### Установка
