@@ -1,20 +1,20 @@
 {% extends "base_site.html" %}
-
+{% load i18n %}
 {% block content %}
-  <h1>Blogger - {{ blogger.user.username }}</h1>
+  <h1>{% trans 'Blogger' %} - {{ blogger.user.username }}</h1>
 
-  <p><strong>Name:</strong> <a href="{{ blog.blogger.get_absolute_url }}">{{ blogger.name }}</a></p>
-  <p><strong>Bio:</strong> {{ blogger.bio }}</p>
-  <p><strong>Birth date:</strong> {{ blogger.birth_date }}</p>
+  <p><strong>{% trans 'Name' %}:</strong> <a href="{{ blog.blogger.get_absolute_url }}">{{ blogger.name }}</a></p>
+  <p><strong>{% trans 'Bio' %}:</strong> {{ blogger.bio }}</p>
+  <p><strong>{% trans 'BirthDate' %}:</strong> {{ blogger.birth_date }}</p>
 
 
   <div style="margin-left:20px;margin-top:20px">
-    <h4>Blogs</h4>
+    <h4>{% trans 'Blogs' %}</h4>
 
     {% for blog in blogger.blog_set.all %}
     <hr>
-      <p><strong>Title:</strong> <a href="{{ blog.get_absolute_url }}">{{blog.blog_name}}</a></p>
-    <p><strong>Last upd.date:</strong> {{blog.last_upd_date}}</p>
+      <p><strong>{% trans 'Title' %}:</strong> <a href="{{ blog.get_absolute_url }}">{{blog.blog_name}}</a></p>
+    <p><strong>{% trans 'LastUpdate' %}:</strong> {{blog.last_upd_date}}</p>
     {% endfor %}
   </div>
 {% endblock %}

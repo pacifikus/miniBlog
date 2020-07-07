@@ -1,7 +1,7 @@
 {% extends "base_site.html" %}
-
+{% load i18n %}
 {% block content %}
-    <h2>All blogs</h2>
+    <h2>{% trans 'AllBlogs' %}</h2>
 
     {% if blog_list %}
     <ul>
@@ -15,6 +15,6 @@
 
     </ul>
     {% else %}
-      <p>There are no blogs.</p>
+      <p>{% trans 'NoBlogs' %}</p>
     {% endif %}       
 {% endblock %}

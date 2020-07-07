@@ -1,0 +1,236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-08 01:52+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\miniBlog\templates\admin\base.html:35
+msgid "Welcome,"
+msgstr ""
+
+#: .\miniBlog\templates\admin\base.html:40
+msgid "View site"
+msgstr ""
+
+#: .\miniBlog\templates\admin\base.html:45
+msgid "Documentation"
+msgstr ""
+
+#: .\miniBlog\templates\admin\base.html:49
+msgid "Change password"
+msgstr ""
+
+#: .\miniBlog\templates\admin\base.html:51
+msgid "Log out"
+msgstr ""
+
+#: .\miniBlog\templates\admin\base.html:61
+#: .\miniBlog\templates\base_site.html:23
+msgid "Home"
+msgstr "Домой"
+
+#: .\miniBlog\templates\admin\base_site.html:3
+msgid "Django site admin"
+msgstr ""
+
+#: .\miniBlog\templates\base_site.html:24
+#: .\miniBlog\templates\miniBlog\blog_list.html:4
+msgid "AllBlogs"
+msgstr "Все блоги"
+
+#: .\miniBlog\templates\base_site.html:25
+#: .\miniBlog\templates\miniBlog\blogger_list.html:4
+msgid "AllBloggers"
+msgstr "Все авторы"
+
+#: .\miniBlog\templates\base_site.html:30
+msgid "Logout"
+msgstr "Выйти"
+
+#: .\miniBlog\templates\base_site.html:32
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:19
+msgid "Login"
+msgstr "Войти"
+
+#: .\miniBlog\templates\index.html:7
+msgid "WelcomeTo"
+msgstr "Добро пожаловать в "
+
+#: .\miniBlog\templates\index.html:7
+msgid "siteDescription"
+msgstr "сайт, созданный с помощью Django"
+
+#: .\miniBlog\templates\index.html:8
+msgid "countDescription"
+msgstr "Сайт включает в себя"
+
+#: .\miniBlog\templates\index.html:11
+msgid "Recent"
+msgstr "последних поста"
+
+#: .\miniBlog\templates\index.html:10
+#: .\miniBlog\templates\miniBlog\blogger_detail.html:12
+msgid "Blogs"
+msgstr "Блоги"
+
+#: .\miniBlog\templates\index.html:11
+msgid "Bloggers"
+msgstr "Авторы"
+
+#: .\miniBlog\templates\index.html:12
+#: .\miniBlog\templates\miniBlog\blog_detail.html:11
+msgid "Posts"
+msgstr "Посты"
+
+#: .\miniBlog\templates\index.html:18
+#: .\miniBlog\templates\miniBlog\blog_detail.html:15
+#: .\miniBlog\templates\miniBlog\blogger_detail.html:16
+msgid "Title"
+msgstr "Название"
+
+#: .\miniBlog\templates\index.html:19
+#: .\miniBlog\templates\miniBlog\blog_detail.html:7
+#: .\miniBlog\templates\miniBlog\blog_detail.html:16
+msgid "Description"
+msgstr "Описание"
+
+#: .\miniBlog\templates\index.html:20
+#: .\miniBlog\templates\miniBlog\blog_detail.html:17
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:12
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:25
+msgid "Date"
+msgstr "Дата"
+
+#: .\miniBlog\templates\miniBlog\blog_detail.html:6
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:7
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:23
+#: .\miniBlog\templates\miniBlog\new_comment.html:5
+msgid "Author"
+msgstr "Автор"
+
+#: .\miniBlog\templates\miniBlog\blog_detail.html:8
+#: .\miniBlog\templates\miniBlog\blogger_detail.html:17
+msgid "LastUpdate"
+msgstr "Последнее обновление"
+
+#: .\miniBlog\templates\miniBlog\blog_detail.html:18
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:15
+msgid "Comments"
+msgstr "Комментарии"
+
+#: .\miniBlog\templates\miniBlog\blog_list.html:18
+msgid "NoBlogs"
+msgstr "Нет блогов"
+
+#: .\miniBlog\templates\miniBlog\blogger_detail.html:4
+msgid "Blogger"
+msgstr "Автор"
+
+#: .\miniBlog\templates\miniBlog\blogger_detail.html:6
+msgid "Name"
+msgstr "Имя"
+
+#: .\miniBlog\templates\miniBlog\blogger_detail.html:7
+msgid "Bio"
+msgstr "Общая информация"
+
+#: .\miniBlog\templates\miniBlog\blogger_detail.html:8
+msgid "BirthDate"
+msgstr "Дата рождения"
+
+#: .\miniBlog\templates\miniBlog\blogger_list.html:17
+msgid "NoBloggers"
+msgstr "Нет блоггеров"
+
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:6
+msgid "Blog"
+msgstr "Блог"
+
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:11
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:24
+msgid "Text"
+msgstr "Текст"
+
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:17
+#: .\miniBlog\templates\miniBlog\new_comment.html:4
+msgid "AddNewComment"
+msgstr "Добавить новый комментарий"
+
+#: .\miniBlog\templates\miniBlog\blogmessage_detail.html:19
+msgid "toAddComment"
+msgstr "чтобы добавить комментарий"
+
+#: .\miniBlog\templates\miniBlog\new_comment.html:11
+msgid "Add"
+msgstr "Добавить"
+
+#: .\miniBlog\templates\registration\logged_out.html:5
+msgid "LoggedOut"
+msgstr "Вы вышли из профиля"
+
+#: .\miniBlog\templates\registration\logged_out.html:7
+msgid "LoginLink"
+msgstr "Нажмите, чтобы снова войти в профиль"
+
+#: .\miniBlog\templates\registration\login.html:5
+msgid "UserdataMismatch"
+msgstr "Неверный логин/пароль. Попробуйте снова."
+
+#: .\miniBlog\templates\registration\login.html:28
+msgid "LostPassword"
+msgstr "Забыли пароль?"
+
+#: .\miniBlog\templates\registration\password_reset_complete.html:4
+msgid "PassChanged"
+msgstr "Пароль успешно изменен"
+
+#: .\miniBlog\templates\registration\password_reset_complete.html:5
+msgid "LoginAgain"
+msgstr "Войти снова"
+
+#: .\miniBlog\templates\registration\password_reset_confirm.html:6
+msgid "EnterPassword"
+msgstr "Пожалуйста, введите новый пароль и подтверждение"
+
+#: .\miniBlog\templates\registration\password_reset_confirm.html:12
+msgid "NewPassword"
+msgstr "Новый пароль"
+
+#: .\miniBlog\templates\registration\password_reset_confirm.html:17
+msgid "ConfirmPassword"
+msgstr "Подтверждение"
+
+#: .\miniBlog\templates\registration\password_reset_confirm.html:22
+msgid "ChangePassword"
+msgstr "Изменить пароль"
+
+#: .\miniBlog\templates\registration\password_reset_confirm.html:27
+msgid "PassResetFailed"
+msgstr "Ошибка изменения пароля"
+
+#: .\miniBlog\templates\registration\password_reset_confirm.html:28
+msgid "PassResetInvalidLink"
+msgstr "Ссылка изменения пароля недействительна. Попробуйте снова."
+
+#: .\miniBlog\templates\registration\password_reset_done.html:4
+msgid "PasswordResetEmail"
+msgstr "Мы отправили вам инструкции по изменению пароля. Если письмо не пришло, проверьте папку спам"
+
+#: .\miniBlog\templates\registration\password_reset_form.html:7
+msgid "Reset"
+msgstr "Сбросить"

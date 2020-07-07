@@ -1,28 +1,32 @@
 {% extends "base_site.html" %}
-
+{% load i18n %}
 {% block content %}
   <h1>{{ blogmessage.title }}</h1>
 
-  <p><strong>Blog:</strong> <a href="{{ blogmessage.blog.get_absolute_url }}">{{ blogmessage.blog.blog_name }}</a></p>
-  <p><strong>Author:</strong> <a href="{{ blogmessage.blog.blogger.get_absolute_url}}">
+  <p><strong>{% trans 'Blog' %}:</strong> <a href="{{ blogmessage.blog.get_absolute_url }}">{{ blogmessage.blog.blog_name }}</a></p>
+  <p><strong>{% trans 'Author' %}:</strong> <a href="{{ blogmessage.blog.blogger.get_absolute_url}}">
     {{ blogmessage.blog.blogger.user.username }}</a></p>
-  <p><img src="{{ blogmessage.image.url }}" height="300" /></p>
+    {% if blogmessage.image %}
+        <p><img src="{{ blogmessage.image.url }}" height="300" /></p>
+    {% else %}
+       <p></p>
+    {% endif %}
 
-  <p><strong>Text:</strong> {{ blogmessage.text }}</p>
-  <p><strong>Date:</strong> {{ blogmessage.create_date }}</p>
+  <p><strong>{% trans 'Text' %}:</strong> {{ blogmessage.text }}</p>
+  <p><strong>{% trans 'Date' %}:</strong> {{ blogmessage.create_date }}</p>
 
   <div style="margin-left:20px;margin-top:20px">
-    <h4>Comments</h4>
+    <h4>{% trans 'Comments' %}</h4>
     {% if user.is_authenticated %}
-        <p><a href="{% url 'new_comment' blogmessage.blog.id blogmessage.id %}">Add new comment</a></p>
+        <p><a href="{% url 'new_comment' blogmessage.blog.id blogmessage.id %}">{% trans 'AddNewComment' %}</a></p>
     {% else %}
-      <p><a href="{% url 'login'%}?next={{request.path}}">Login</a> to add a new comment</p>
+      <p><a href="{% url 'login'%}?next={{request.path}}">{% trans 'Login' %}</a>{% trans 'toAddComment' %}</p>
     {% endif %}
     {% for comment in blogmessage.comment_set.all %}
     <hr>
-    <p><strong>Author:</strong> {{comment.author.username}}</p>
-    <p><strong>Text:</strong> {{comment.text}}</p>
-    <p><strong>Date:</strong> {{comment.create_date}}</p>
+    <p><strong>{% trans 'Author' %}:</strong> {{comment.author.username}}</p>
+    <p><strong>{% trans 'Text' %}:</strong> {{comment.text}}</p>
+    <p><strong>{% trans 'Date' %}:</strong> {{comment.create_date}}</p>
     {% endfor %}
   </div>
 {% endblock %}

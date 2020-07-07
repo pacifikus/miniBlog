@@ -1,21 +1,21 @@
 {% extends "base_site.html" %}
-
+{% load i18n %}
 {% block content %}
   <h1>{{ blog.blog_name }}</h1>
 
-  <p><strong>Author:</strong> <a href="{{ blog.blogger.get_absolute_url }}">{{ blog.blogger.name }}</a></p>
-  <p><strong>Description:</strong> {{ blog.description }}</p>
-  <p><strong>Last upd. date:</strong> {{ blog.last_upd_date }}</p>
+  <p><strong>{% trans 'Author' %}:</strong> <a href="{{ blog.blogger.get_absolute_url }}">{{ blog.blogger.name }}</a></p>
+  <p><strong>{% trans 'Description' %}:</strong> {{ blog.description }}</p>
+  <p><strong>{% trans 'LastUpdate' %}:</strong> {{ blog.last_upd_date }}</p>
 
   <div style="margin-left:20px;margin-top:20px">
-    <h4>Posts - {{ blog.blogmessage_set.count }}</h4>
+    <h4>{% trans 'Posts' %} - {{ blog.blogmessage_set.count }}</h4>
 
     {% for post in blog.blogmessage_set.all %}
     <hr>
-    <p><strong>Title:</strong> <a href="{{ post.get_absolute_url}}">{{post.title}}</a></p>
-    <p><strong>Description:</strong> {{post.get_short_text}}</p>
-    <p><strong>Date:</strong> {{post.create_date}}</p>
-    <p>{{post.comment_set.count}} comments</p>
+    <p><strong>{% trans 'Title' %}:</strong> <a href="{{ post.get_absolute_url}}">{{post.title}}</a></p>
+    <p><strong>{% trans 'Description' %}:</strong> {{post.get_short_text}}</p>
+    <p><strong>{% trans 'Date' %}:</strong> {{post.create_date}}</p>
+    <p>{{post.comment_set.count}} {% trans 'Comments' %}</p>
     {% endfor %}
   </div>
 {% endblock %}

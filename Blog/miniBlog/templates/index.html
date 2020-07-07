@@ -2,20 +2,22 @@
 
 {% block content %}
 <h1>MiniBlog</h1>
-<p>Welcome to <em>MiniBlog</em>, a very basic Django website.</p>
-<p>The site has the following record counts:</p>
+{% load i18n %}
+
+<p>{% trans 'WelcomeTo' %}<em>MiniBlog</em> - {% trans 'siteDescription' %}</p>
+<p>{% trans 'countDescription' %}:</p>
 <ul>
-    <li><strong>Blogs:</strong> {{ num_blogs }}</li>
-    <li><strong>Bloggers:</strong> {{ num_bloggers }}</li>
-    <li><strong>Posts:</strong> {{ num_messages }}</li>
+    <li><strong>{% trans 'Blogs' %}:</strong> {{ num_blogs }}</li>
+    <li><strong>{% trans 'Bloggers' %}:</strong> {{ num_bloggers }}</li>
+    <li><strong>{% trans 'Posts' %}:</strong> {{ num_messages }}</li>
 </ul>
 <div style="margin-left:20px;margin-top:20px">
-    <h4>3 recent posts</h4>
+    <h4>3 {% trans 'Recent' %}</h4>
     {% for post in recent_posts %}
         <hr>
-        <p><strong>Title:</strong> <a href="{{ post.get_absolute_url}}">{{post.title}}</a></p>
-        <p><strong>Description:</strong> {{post.get_short_text}}</p>
-        <p><strong>Date:</strong> {{post.create_date}}</p>
+        <p><strong>{% trans 'Title' %}:</strong> <a href="{{ post.get_absolute_url}}">{{post.title}}</a></p>
+        <p><strong>{% trans 'Description' %}:</strong> {{post.get_short_text}}</p>
+        <p><strong>{% trans 'Date' %}:</strong> {{post.create_date}}</p>
         <p>{{post.comment_set.count}} comments</p>
     {% endfor %}
 </div>
