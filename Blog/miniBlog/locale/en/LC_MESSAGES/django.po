@@ -82,6 +82,10 @@ msgstr "The site has the following record counts"
 msgid "Blogs"
 msgstr "Blogs"
 
+#: .\miniBlog\templates\registration\password_reset_form.html:5
+msgid "PassReset"
+msgstr "Password reset"
+
 #: .\miniBlog\templates\index.html:11
 msgid "Bloggers"
 msgstr "Bloggers"
@@ -171,7 +175,7 @@ msgstr "Add new comment"
 
 #: .\miniBlog\templates\miniBlog\blogmessage_detail.html:19
 msgid "toAddComment"
-msgstr "to add new comment"
+msgstr " to add new comment"
 
 #: .\miniBlog\templates\miniBlog\new_comment.html:11
 msgid "Add"

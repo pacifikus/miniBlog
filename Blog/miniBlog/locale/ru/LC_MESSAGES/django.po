@@ -203,6 +203,10 @@ msgstr "Пароль успешно изменен"
 msgid "LoginAgain"
 msgstr "Войти снова"
 
+#: .\miniBlog\templates\registration\password_reset_form.html:5
+msgid "PassReset"
+msgstr "Сброс пароля"
+
 #: .\miniBlog\templates\registration\password_reset_confirm.html:6
 msgid "EnterPassword"
 msgstr "Пожалуйста, введите новый пароль и подтверждение"
