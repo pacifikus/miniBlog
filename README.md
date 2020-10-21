@@ -22,7 +22,7 @@
 ```
 pip install -r requirements.txt
 ```
-##### Применение миграция
+##### Применение миграций
 ```
 python manage.py migrate
 ```
